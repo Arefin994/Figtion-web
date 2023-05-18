@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import './Navbar.css';
+import Footer from '../Footer/Footer';
 
 const Navbar = () => {
   return (
@@ -56,6 +57,7 @@ const Navbar = () => {
       </div>
     </nav>
     <Outlet></Outlet>
+    {/* <Footer></Footer> */}
     </div>
   );
 };
