@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Figure from './components/Figure/Figure';
+import NavAllToys from './components/NavAllToys/NavAllToys';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/figure',
         element: <Figure></Figure>
+      },
+      {
+        path: '/allToys',
+        element: <NavAllToys></NavAllToys>
       }
     ]
   },
