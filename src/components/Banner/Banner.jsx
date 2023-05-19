@@ -1,8 +1,9 @@
-
+import Carousel from '../Carousel/Carousel';
+import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='thm-clr'>
+        <div className='thm-clr mt-3'>
             <section className="header-area header-one">
                 <div className="header-content-area">
                     <div className="container">
@@ -11,18 +12,17 @@ const Banner = () => {
                                 <div className="header-wrapper">
                                     <div className="header-content">
                                         <h1 className="header-title">
-                                            Unlimited Friendly & Easy Customisable
+                                        Unleash Your Inner Hero with Our Action Figure Toys
                                         </h1>
                                         <p className="text-lg">
-                                            Stop wasting time and money designing and managing a website
-                                            that doesn’t get results. Happiness guaranteed!
+                                        Embark on epic adventures with our collection of action figure toys!
                                         </p>
-                                        <div className="header-btn rounded-buttons">
+                                        <div className="btn btn-cstm">
                                             <a
                                                 className="btn primary-btn-outline btn-lg"
                                                 href="javascript:void(0)"
                                             >
-                                                DOWNLOAD NOW
+                                                Get Started
                                             </a>
                                         </div>
                                     </div>
@@ -30,11 +30,8 @@ const Banner = () => {
                             </div>
                             <div className="col-lg-6 col-12">
                                 <div className="header-image d-none d-lg-block">
-                                    <div className="image">
-                                        <img
-                                            src="./banner.jpg"
-                                            alt="Header"
-                                        />
+                                    <div className="image">  
+                                        <Carousel></Carousel>
                                     </div>
                                 </div>
                             </div>

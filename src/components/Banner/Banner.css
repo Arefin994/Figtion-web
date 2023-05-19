@@ -1,0 +1,15 @@
+.bnr-img{
+    height: 500px;
+    width: 100px;
+    border-radius: 300px;
+}
+a:visited{
+    color: #f8ca96;
+}
+.btn-cstm{
+    background-color:  #f8ca96;
+    border: 25px;
+}
+.btn-cstm:hover{
+    background-color:  white;
+}
