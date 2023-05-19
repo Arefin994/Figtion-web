@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './PopularNow.css';
 import { FaStar } from 'react-icons/fa';
-import { createBrowserHistory } from 'history';
+import { useNavigate } from 'react-router-dom';
 
 const PopularNow = () => {
     const [data, setData] = useState([]);
-    const history = createBrowserHistory();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('data.json')
@@ -16,13 +16,13 @@ const PopularNow = () => {
 
     const handleBuyNow = (item) => {
         localStorage.setItem('selectedItem', JSON.stringify(item));
-        history.push('/figure');
+        navigate('/figure');
     };
 
     return (
         <div className="popular-now d-flex align-items-center justify-content-center">
             <div className="container">
-                <h2 className='text-center py-5'>Currently <span className='text-white'>Popular</span></h2>
+                <h2 className='text-center py-5'>Currently <span className='' style={{color: 'ffc107'}} >Popular</span></h2>
                 <div className="row row-cols-1 row-cols-md-3">
                     {data.allItems?.products?.map(item => (
                         <div className="col mb-4" key={item.id}>

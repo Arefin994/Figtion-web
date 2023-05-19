@@ -6,3 +6,9 @@
     border: 2px solid white;
     border-radius: 5px;
   }
+  button:hover{
+    color: black;
+  }
+  .btn-cstm:hover{
+    color: black;
+  }
