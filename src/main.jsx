@@ -10,6 +10,8 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Figure from './components/Figure/Figure';
 import NavAllToys from './components/NavAllToys/NavAllToys';
+import SignUP from './components/SignUP/SignUP';
+import MyToys from './components/MyToys/MyToys';
 
 
 const router = createBrowserRouter([
@@ -26,12 +28,20 @@ const router = createBrowserRouter([
         element: <Login></Login>
       },
       {
+        path: '/signup',
+        element: <SignUP></SignUP>
+      },
+      {
         path: '/figure',
         element: <Figure></Figure>
       },
       {
         path: '/allToys',
         element: <NavAllToys></NavAllToys>
+      },
+      {
+        path: '/myToys',
+        element: <MyToys></MyToys>
       }
     ]
   },
