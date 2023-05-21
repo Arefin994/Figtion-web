@@ -1,0 +1,8 @@
+.custom-border {
+    border: 2px solid #f88105;
+    border-radius: 5px;
+}
+.custom-bg{
+    background-color: #f8ca96;
+    color: black;
+}

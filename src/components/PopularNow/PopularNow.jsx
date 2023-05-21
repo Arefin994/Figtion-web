@@ -16,9 +16,6 @@ const PopularNow = () => {
             .then(res => res.json())
             .then(data => {
                 setSeller(data);
-                console.log(data);
-                console.log(data.allItems);
-                console.log(data.allItems.allItems.sellers[0]);
             });
     }, []);
 

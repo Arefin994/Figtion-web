@@ -1,11 +1,13 @@
 
 
-const Carousel = () => {
+const Carousel2 = () => {
     return (
         <div>
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators34" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
-
+                    <li data-target="#carouselExampleIndicators34" data-slide-to="0" className="active"></li>
+                    <li data-target="#carouselExampleIndicators34" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators34" data-slide-to="2"></li>
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -18,11 +20,11 @@ const Carousel = () => {
                         <img className="img-fluid bnr-img d-block w-100" src="https://preeti.com.bd/wp-content/uploads/2022/03/Harry-Potter-Action-Figure.webp" alt="Third slide" />
                     </div>
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#carouselExampleIndicators34" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#carouselExampleIndicators34" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
@@ -31,4 +33,4 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default Carousel2;

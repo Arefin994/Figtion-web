@@ -12,6 +12,8 @@ import Figure from './components/Figure/Figure';
 import NavAllToys from './components/NavAllToys/NavAllToys';
 import SignUP from './components/SignUP/SignUP';
 import MyToys from './components/MyToys/MyToys';
+import Blog from './components/Blog/Blog';
+import Error404 from './components/Error404/Error404';
 
 
 const router = createBrowserRouter([
@@ -42,9 +44,17 @@ const router = createBrowserRouter([
       {
         path: '/myToys',
         element: <MyToys></MyToys>
-      }
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
+      },
     ]
   },
+  {
+    path: '*',
+    element: <Error404></Error404>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
