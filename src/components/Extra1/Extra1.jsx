@@ -3,7 +3,7 @@ import './Extra1.css'
 
 const Extra1 = () => {
     return (
-        <div className='align-items-center justify-content-center '>
+        <div className='align-items-center justify-content-center my-5'>
             <h2 className='text-center py-2'>Gal<span className="text-cstm">lery</span></h2>
             <div className="w-100 h-100 corso mx-auto my-auto">
                 <div id="carouselExampleCaptions6969" className="carousel slide">

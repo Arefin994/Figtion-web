@@ -35,7 +35,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#270A08' }}>
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand thm-clr" to="/">
+                    <NavLink className="navbar-brand" to="/">
                         <img className='me-2' src="/public/logo.PNG" alt="Logo" width="50" height="50" />
                         Fig<span className='text-white'>tion</span>
                     </NavLink>
@@ -78,9 +78,9 @@ const Navbar = () => {
                         {user ? (
                             <ul className="navbar-nav">
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src={user.photoURL} alt={user.displayName} className="rounded-circle me-2" style={{ width: '40px', height: '40px' }} />
-                                        {user.email}
+                                    <a className="nav-link dropdown-toggle thm-clr" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-name={user.email}>
+                                        <img src={user.photoURL} alt={user.email} className="rounded-circle me-2" style={{ width: '40px', height: '40px' }} />
+                                        {user.displayName}
                                     </a>
                                     <ul className="dropdown-menu " aria-labelledby="navbarDropdown">
                                         <li><button className="dropdown-item" onClick={handleSignOut}>Log out</button></li>
